@@ -6,7 +6,7 @@ from io import BytesIO
 import os
 from PIL import Image
 
-MODEL = tf.keras.models.load_model(r'C:\Users\AUDRIK\OneDrive\Desktop\Plant Disease\plant_models\5')
+MODEL = tf.keras.models.load_model(r'C:\Users\AUDRIK\OneDrive\Desktop\Plant Disease\plant_models\4')
 
 app = Flask(__name__)
 
@@ -17,23 +17,23 @@ def preprocess_image(image_path):
     image = np.expand_dims(image, axis=0)
     return image
 
-CLASS_NAMES = ['Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot',
- 'Corn_(maize)___Common_rust_',
- 'Corn_(maize)___Northern_Leaf_Blight',
- 'Corn_(maize)___healthy',
- 'Pepper__bell___Bacterial_spot',
- 'Pepper__bell___healthy',
- 'Potato___Early_blight',
- 'Potato___Late_blight',
- 'Potato___healthy',
- 'Tomato_Bacterial_spot',
- 'Tomato_Early_blight',
- 'Tomato_Late_blight',
- 'Tomato_Leaf_Mold',
- 'Tomato_Septoria_leaf_spot',
- 'Tomato__Tomato_YellowLeaf__Curl_Virus',
- 'Tomato__Tomato_mosaic_virus',
- 'Tomato_healthy']
+CLASS_NAMES = ['Corn Cercospora leaf_spot ',
+ 'Corn Common rust',
+ 'Corn Northern Leaf Blight',
+ 'Corn healthy',
+ 'Bell Pepper Bacterial_spot',
+ 'Bell Pepper healthy',
+ 'Potato Early_blight',
+ 'Potato Late_blight',
+ 'Potato healthy',
+ 'Tomato Bacterial_spot',
+ 'Tomato Early_blight',
+ 'Tomato Late_blight',
+ 'Tomato Leaf_Mold',
+ 'Tomato Septoria_leaf_spot',
+ 'Tomato Curl_Virus',
+ 'Tomato mosaic_virus',
+ 'Tomato healthy']
 
 UPLOAD_FOLDER = './uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
