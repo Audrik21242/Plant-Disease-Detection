@@ -2,14 +2,14 @@
 This project builds a Convolutional Neural Network (CNN) model to predict diseases affecting common food crops, including corn, millet, and more. By analyzing images of crop leaves, the model identifies specific diseases, aiding in quick and effective agricultural diagnostics.
 
 # Table of Contents
-Project Overview
-Dataset
-Model Architecture
-Data Preprocessing
-Training Process
-Technologies Used
-Deployment
-Results
+1. Project Overview
+2. Dataset
+3. Model Architecture
+4. Data Preprocessing
+5. Training Process
+6. Technologies Used
+7. Deployment
+7. Results
 
 # Project Overview
 The goal of this project is to create a deep learning model capable of classifying diseases in plants based on leaf images. Using Convolutional and Pooling layers, the model learns to distinguish features associated with different diseases. A web application interface was created for user interaction, allowing users to upload leaf images for disease classification.
@@ -54,6 +54,7 @@ A Flask-based web application serves as the user interface:
 Frontend: Users can upload an image of a leaf through a simple HTML form.
 Backend: The image is processed, and the model returns the predicted disease class along with the confidence level.
 Output: The app displays the predicted disease and its confidence percentage to the user.
-Results
+
+# Results
 The CNN model achieves promising results in identifying plant diseases based on leaf images. Detailed results and model evaluation metrics can be found in the [Results Notebook / Results section of this repository].
 
